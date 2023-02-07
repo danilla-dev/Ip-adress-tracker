@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+
+<body>
+  <header>
+    <div class="header-img">
+      <h1>IP Adress Tracker</h1>
+      <div class="input-div">
+        <input class="ip-input" type="text">
+        <button class="search-btn">
+          <img src="images/icon-arrow.svg" alt="Ikona strzalki do wyszukiwania ">
+        </button>
+      </div>
+      <p class="error">Please enter a valid IP address!</p>
+    </div>
+  </header>
+
+  <section class="map-section">
+
+
+    <div class="info-window wrapper">
+
+      <div class="ip-adress-info info">
+        <p class="ip-adress-name name">IP adress</p>
+        <p class="ip-adress-result result"></p>
+      </div>
+
+      <div class="location-info info">
+        <p class="location-name name">Location</p>
+        <p class="location-result result"></p>
+      </div>
+
+      <div class="time-zone-info info">
+        <p class="time-zone-name name">Time zone</p>
+        <p class="time-zone-result result"></p>
+      </div>
+
+      <div class="isp-info info">
+        <p class="isp-name name">isp</p>
+        <p class="isp-result result"></p>
+      </div>
+    </div>
+
+    <div class="map-container"></div>
+
+  </section>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="scripts/ipSearch.js"></script>
+</body>
+
+</html>

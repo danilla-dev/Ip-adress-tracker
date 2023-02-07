@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: auto;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+
+header .header-img {
+  position: relative;
+  width: auto;
+  height: 220px;
+  background-image: url("../images/pattern-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+header .header-img h1 {
+  text-align: center;
+  padding-top: 1em;
+  color: #fff;
+}
+header .header-img .input-div {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 1.5em;
+}
+header .header-img .input-div .ip-input {
+  position: absolute;
+  left: 50%;
+  width: 80%;
+  height: 100%;
+  padding: 1em;
+  transform: translateX(-50%);
+  border: transparent;
+  border-radius: 5px;
+}
+header .header-img .input-div .search-btn {
+  position: absolute;
+  right: 10%;
+  width: 10%;
+  height: 100%;
+  border: transparent;
+  border-radius: 0 5px 5px 0;
+  background-color: black;
+}
+header .header-img .error {
+  margin: 0.5em;
+  text-align: center;
+  font-size: 1rem;
+  color: red;
+}
+
+.map-section {
+  position: relative;
+  height: calc(100vh - 220px);
+}
+.map-section .info-window {
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  width: 80%;
+  padding: 1.5em;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  z-index: 1000;
+}
+.map-section .info-window .info {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.map-section .info-window .name {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: gray;
+  font-weight: 400;
+}
+.map-section .info-window .result {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.map-section .map-container {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  header .header-img h1 {
+    padding-top: 0.5em;
+    font-size: 3rem;
+  }
+  header .header-img .input-div {
+    width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header .header-img .error {
+    font-size: 2rem;
+  }
+  .map-section .info-window {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    width: 90%;
+  }
+  .map-section .info-window .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 22%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .map-section .info-window .info:nth-last-child(-n+1) {
+    border-right: none;
+  }
+  .map-section .info-window .info,
+  .map-section .info-window .name,
+  .map-section .info-window .result {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */
