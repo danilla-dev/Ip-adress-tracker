@@ -1,7 +1,9 @@
 # Frontend Mentor - IP address tracker solution
 
-This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+## Links
+
+- Live Site URL: [Live](https://danillakam.github.io/Ip-adress-tracker/)
 ### INFO!
 
 If website dont work try to turn off a adBlock ;)
@@ -34,9 +36,7 @@ Users should be able to:
 ![](/images/screenShots/s2.png)
 ![](/images/screenShots/s3.png)
 
-### Links
 
-- Live Site URL: [Live](https://danillakam.github.io/Ip-adress-tracker/)
 
 ## My process
 
