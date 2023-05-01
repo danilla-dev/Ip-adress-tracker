@@ -3,7 +3,7 @@
 
 ## Links
 
-- Live Site URL: [Live](https://danillakam.github.io/Ip-adress-tracker/)
+- Live Site URL: [Live](https://danilla-dev.github.io/Ip-adress-tracker/)
 ### INFO!
 
 If website dont work try to turn off a adBlock ;)
